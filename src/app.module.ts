@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BooksModule } from './books/books.module';
+import { BookOverviewModule } from './book-overview/book-overview.module';
 
 @Module({
   imports: [
@@ -14,9 +15,10 @@ import { BooksModule } from './books/books.module';
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
-      synchronize: false,
+      synchronize: true,
     }),
     BooksModule,
+    BookOverviewModule,
   ],
   controllers: [],
   providers: [],

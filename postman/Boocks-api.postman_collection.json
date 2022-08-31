@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "4f8f5612-18f7-426c-8fe9-fc736bf7f9a4",
+		"name": "Boocks-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "871078"
+	},
+	"item": [
+		{
+			"name": "Book Create ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Hola mundo3\",\n    \"author\": \"Ludwring Liccien\",\n    \"year\": \"2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/books/328c7fac-0a5b-44ce-a8d1-751865479cb9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"328c7fac-0a5b-44ce-a8d1-751865479cb9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book UpdateBayId",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"year\": \"2000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books/328c7fac-0a5b-44ce-a8d1-751865479cb9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"328c7fac-0a5b-44ce-a8d1-751865479cb9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/books/2620e977-0b62-4835-ae14-95ff9e0acacd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"2620e977-0b62-4835-ae14-95ff9e0acacd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Overview CreateByBookId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"Esto es un mensaje\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/book-overview/652715db-856d-4aeb-9a68-b4ffec16596a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book-overview",
+						"652715db-856d-4aeb-9a68-b4ffec16596a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Overview FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/book-overview/55f8de11-0875-46d2-b2cb-dce3421ad44b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book-overview",
+						"55f8de11-0875-46d2-b2cb-dce3421ad44b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Overview FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/book-overview",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book-overview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Overview UpdateById",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"Esto es un mensaje 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/book-overview/55f8de11-0875-46d2-b2cb-dce3421ad44b/652715db-856d-4aeb-9a68-b4ffec16596a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book-overview",
+						"55f8de11-0875-46d2-b2cb-dce3421ad44b",
+						"652715db-856d-4aeb-9a68-b4ffec16596a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Overview DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/book-overview/391559f6-9854-4350-9c01-2c88ecd72049",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book-overview",
+						"391559f6-9854-4350-9c01-2c88ecd72049"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
